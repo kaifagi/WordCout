@@ -68,15 +68,10 @@ int main()
 	scanf("%s %s",c,fileName);
 	getchar();
 	fp=fopen(fileName,"r");
-/*	if(fp == NULL)
-	{
-		return 0;
-
-	}*/
 	shu=count(c,fp);
 	if(strcmp(c,"-c")==0)
 		printf("字符数： %d\n",shu);
 	if(strcmp(c,"-w")==0)
-		printf("单词数： %d\n",shu-2);
+		printf("单词数： %d\n",shu);
 	return 0;
 }
